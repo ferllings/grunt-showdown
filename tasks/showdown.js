@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         });
 
 
-        var showdown = new Showdown.converter({extensions: options.extensions});
+        var showdown = new Showdown.Converter({extensions: options.extensions});
         // Iterate over all specified file groups.
         this.files.forEach(function (f) {
             var writer;
